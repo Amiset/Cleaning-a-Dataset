@@ -36,7 +36,7 @@ output: html_document
 6.    The zipped file creates a directory called 'UCI HAR Dataset' which has the raw data.
 
 *** 
-### Details of files that exist in the repository
+### Files in the Repository
 
 ##### 7. README.md - 
       It is the file you read right now. It explains the purpose and the contents of the repository.
