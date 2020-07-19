@@ -1,3 +1,11 @@
+#########################################################
+#Written by - Amit
+################################################################################
+# Loads required libraries
+################################################################################
+# Version: dplyr 1.0.0
+library(dplyr)
+
 # 1. Get Data
 
 # 1a.Download the raw dataset file in the data folder. Check to see if the 'data' folder exists
@@ -120,7 +128,7 @@ names(MainData)
 #The tidy data set will having the average of each variable for each activity and each subject
 
 #11a. Grouping and summarizing the 'MainData', using 'dplyr'
-library(dplyr);
+
 MainData2<- MainData %>% group_by(subject, activity) %>% summarise_each(funs(mean))
 MainData2<-MainData2[order(MainData2$subject,MainData2$activity),]
 
